@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Hackathon 2026</title>
+    </head>
+    <body>
+        <!--header section-->
+        <header>
+            <h1>Hackathon 2026</h1>
+            <p>Transforming Ideas into Reality</p>
+        </header>
+        <!--Navigation bar section-->
+        <nav>
+           <a href="#about">About the Event</a>
+           <a href="#schedule">Event Schedule</a>
+           <a href="#register">Registration</a>
+        </nav>
+        <main>
+            <!--About section-->
+            <section id="about">
+                <h2>About the Event</h2>
+                <article>
+                    <h3>Main Speaker: Dr. Raudhah Juhari</h3>
+                    <p>Dr. Raudhah is a dean for computer science will share about pyhton language.</p>
+                </article>
+                <article>
+                    <h3>Activity Hightlight: Rapid Prototyping Workshop</h3>
+                    <p>Hands-on session designer to help teams quickly wireframe and build functional prototypes using clean HTML semantics.</p>
+                </article>
+            </section>
+            <!--Schedule section-->
+            <section id="schedule">
+                <h2>Event Schedule</h2>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Activity</th>
+                            <th>Venue</th>
+                            <th>Person in Charge</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>8.00 a.m - 9.00 a.m</td>
+                            <td>Participant Registration & Breakfast</td>
+                            <td>Main Lobby</td>
+                            <td>Volunteers Team</td>
+                        </tr>
+                        <tr>
+                            <td>9.00 a.m - 10.30 a.m</td>
+                            <td>Opening Ceremony & Main Speaker</td>
+                            <td>Auditorium</td>
+                            <td>Dr.Raudhah Juhari</td>
+                        </tr>
+                        <tr>
+                            <td>10.30 a.m - 1.00 p.m</td>
+                            <td>Hackathon Session 1: Brainstorming</td>
+                            <td>Lab 1 & Lab 2</td>
+                            <td>Mentors Team</td>
+                        </tr>
+                        <tr>
+                            <td>1.00 p.m - 2.00 p.m</td>
+                            <td colspan="3">Lunch Break & Networking</td>
+                        </tr>
+                        <tr>
+                            <td>2.00 p.m - 5.00 p.m</td>
+                            <td>Hackathon Session 2: Development</td>
+                            <td>Lab 1 & Lab 2</td>
+                            <td>Developer Team</td>
+                        </tr>
+                        <tr>
+                            <td>5.00 p.m - 6.30 p.m</td>
+                            <td>Project Presentation & Prize Giving</td>
+                            <td>Auditorium</td>
+                            <td>Organizing Committee</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <!--Registration Form section-->
+            <section id="register">
+                <h2>Registration Form</h2>
+                <form action="register.html" method="post">
+                    <p>
+                        <label for="fullname">Full Name:</label><br>
+                        <input type="text" id="fullname" name="fullname" required>
+                    </p>
+                    <p>
+                        <label for="matric">Matric Number:</label><br>
+                        <input type="text" id="matric" name="matric" required>
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br>
+                        <input type="text" id="email" name="email" required>
+                    </p>
+                    <p>
+                        <label>Year of Study:</label><br>
+                        <input type="radio" id="year1" name="yearofstudy" value="Year 1">
+                        <label for="year1">Year 1</label>
+                        <input type="radio" id="year2" name="yearofstudy" value="Year 2">
+                        <label for="year2">Year 2</label>
+                        <input type="radio" id="year3" name="yearofstudy" value="Year 3">
+                        <label for="year3">Year 3</label>
+                        <input type="radio" id="year4" name="yearofstudy" value="Year 4">
+                        <label for="year4">Year 4</label>
+                    </p>
+                    <p>
+                        <label>Sessions to Join:</label><br>
+                        <input type="checkbox" id="session1" name="sessions" value="Main Speaker">
+                        <label for="session1">Main Speaker</label><br>
+                        <input type="checkbox" id="session2" name="sessions" value="Workshop">
+                        <label for="session2">Rapid Prototyping Workshop</label><br>
+                        <input type="checkbox" id="session3" name="sessions" value="Workshop">
+                        <label for="session3">24 Hour Hackathon</label><br>
+
+                    </p>
+                    <p>
+                        <label for="programme">Programme / Faculty:</label>
+                        <select id="programme" name="programme">
+                            <option value="cs">BSc. Computer Science</option>
+                            <option value="cs">BSc. Software Engineering</option>
+                            <option value="cs">BSc. Information Technology</option>
+                            <option value="cs">BSc. Data Science</option>
+                        </select>
+                    </p>
+                    <p>
+                        <input type="submit" value="Register Now">
+                    </p>
+                </form>
+            </section>
+                <!--Footer section-->
+            <footer>
+                <p>Organised By Faculty of Computer Science and Mathematics, UMT</p>
+                <P>Copyright &copy; 2026 Hackathon. All rights reseved.</P>
+            </footer>
+        </main>
+    </body>
+</html>

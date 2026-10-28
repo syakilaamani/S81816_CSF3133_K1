@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Course Feedback</title>
+
+</head>
+<body>
+<header>
+    <h1>CSF3133 Course Feedback</h1>
+</header>
+<nav>
+    <a href="#results">Results</a> | <a href="#form">Feedback Form</a>
+</nav>
+<section id="results">
+    <h2>Feedback Summary</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Week</th>
+                <th>Topic</th>
+                <th>Description / Focus</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Introduction to HTML</td>
+                <td>Basic structures and tags</td>
+                <td>4.5</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Tables and Forms</td>
+                <td>Data layouts and user input elements</td>
+                <td>4.2</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Semantic HTML</td>
+                <td>Modern structures and accessibility</td>
+                <td>4.0</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+<section id="form">
+    <h2>Give Your Feedback</h2>
+    <form action="submit_feedback.php" method="post">
+        <div>
+            <label for="fullname">Name:</label><br>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+    <div>
+        <label for="course_type">Attendance Mode:</label><br>
+        <select id="course_type" name="course_type">
+            <option value="online">Online / Remote</option>
+            <option value="physical">Physical / Face-to-Face</option>
+        </select>
+    </div>
+
+    <div>
+        <label>Overall Rating:</label><br>
+        <input type="radio" id="good" name="rating" value="good">
+        <label for="good">Good</label>
+        <input type="radio" id="poor" name="rating" value="poor">
+        <label for="poor">Poor</label>
+    </div>
+
+    <div>
+        <input type="checkbox" id="lab" name="lab" value="yes">
+        <label for="lab">I attended all labs</label>
+    </div>
+
+    <div>
+        <label for="comments">Additional Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Share your experience..."></textarea>
+    </div>
+
+    <div>
+        <input type="submit" value="Submit Feedback">
+    </div>
+</form>
+</section>
+<footer>
+    <p>Copyright &copy; 2026 CSF3133</p>
+</footer>
+</body>
+</html>
