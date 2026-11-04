@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Campus Bakery Online</title>
+    </head>
+    <body>
+        <!--Header Section-->
+        <div id="header">
+            <h1>Campus Bakery&reg;</h1>
+            <span>Smart food for bright minds.</span>
+        </div>
+        <hr>
+        <div id="nav">
+            <a href="#home">Home</a>
+            <a href="#order">Order</a>
+            <a href="#price">Price List</a>
+        </div>
+        <hr>
+        <!--Content Section-->
+        <div id="content">
+            <h2>Welcome to Campus Bakery</h2>
+            <p>
+                We provide the <strong>tasty Cupcake</strong> and <em>delicious Cake</em> for students.
+                Visit Our <span>online bakery</span> to place your order.
+            </p>
+            <h2>Our Products</h2>
+            <ul>
+                <li>Chocolate Cupcake</li>
+                <li>Blueberry Cupcake</li>
+                <li>Strawberry Cake</li>
+            </ul>
+            <!--Order Form-->
+            <div id="order">
+                <h2>Order Online Form</h2>
+                <form oninput="total.value = (cupcakes.valueAsNumber * 3) + (slices.valueAsNumber * 5)">
+                    <label>Customer Name:</label>
+                    <input type="text" name="customer" placeholder="Enter your name" required autofocus>
+                    <br><br>
+                    <label>Phone Number:</label>
+                    <input type="text" name="phone" placeholder="Enter your phone number" required>
+                    <br><br>
+                    <label>Email:</label>
+                    <input type="text" name="email" placeholder="Enter your email" required>
+                    <br><br>
+                    <label>Pick-up Date:</label>
+                    <input type="date" name="date">
+                    <br><br>
+                    <label>Pick-up Time:</label>
+                    <input type="time" name="time">
+                    <br><br>
+                    <label>Flavours:</label>
+                    <input type="text" name="flavours" list="flavours">
+
+                    <datalist id="flavours">
+                        <option value="Chocolate">
+                        <option value="Strawberry">
+                        <option value="Blueberry">
+                        <option value="Biscoff">
+                    </datalist>
+                    <br><br>
+                    <label>Icing Colour:</label>
+                    <input type="color" name="colour">
+                    <br><br>
+                    <label>Sweetness Level:</label>
+                    <input type="range" name="sweetness" min="1" max="5" step="1">
+                    <br><br>
+                    <h2>Price Calculator</h2>
+                    <label>Cupcakes (RM 3.00 each):</label>
+                    <input type="number" id="cupcakes" name="cupcakes" min="0" value="0">
+                    <br><br>
+                    <label>Cake Slices (RM 5.00 each):</label>
+                    <input type="number" id="slices" name="slices" min="0" value="0">
+                    <br><br>
+                    <label>Total Prices: RM</label>
+                    <output name="total" for="cupcakes slices">0</output>
+                    <br><br>
+                    <input type="submit" value="Submit Order">
+                </form>
+            </div>
+        </div>
+        <!--Sidebar Section-->
+        <div id="sidebar">
+            <h2>Price List</h2>
+            <ul>
+                <li>Chocolate Cake - RM 20.00</li>
+                <li>Biscoff Cake - RM 40.00</li>
+            </ul>
+            <p>Orders &gt; 10 pieces get a free drink!</p>
+        </div>
+
+        <!--Footer Section-->
+        <div id="footer">
+            <p>Thank you for visiting Campus Bakery&reg;</p>
+            <p>Contact Us: campusbakery@gmail.com</p>
+            <p>Price in &pound; and &nbsp; RM</p>
+            <p>&copy; 2026 CampusBakery.All rights reserved.</p>
+        </div>
+    </body>
+</html>

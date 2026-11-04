@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ticket Booking</title>
+</head>
+<body>
+
+    <!-- Error Corrections:
+    Error 1 (Line 1): Missing html in DOCTYPE.
+    Error 2 (Line 9): Incorrect closing span tag.
+    Error 3 (Line 11): Span should be div.
+    Error 4 (Line 13): Special characters < and & need entities.
+    Error 5 (Line 14): Calculation joins strings instead of adding numbers.
+    Error 6 (Line 18): Email type is misspelled as emial.
+    Error 7 (Line 22-23): Datalist id does not match the input list.
+    Error 8 (Line 32): Range min and max values are reversed.
+    Error 9 (Line 33): Output for attribute has incorrect input names.
+    Error 10 (Line 38): Copyright entity has incorrect capital letter.
+    Error 11 (Line 41 and 54): Extra closing HTML tags.
+    -->
+
+    <!-- Header Section -->
+    <div id="header">
+
+        <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+
+        <p>Welcome to Campus Cinema!</p>
+
+    </div>
+
+
+    <!-- Navigation Section -->
+    <div id="nav">
+
+        <a href="lab3_ExerB.html">Home</a> |
+        <a href="lab3_ExerB1.html">Book Ticket</a>
+
+    </div>
+
+
+    <!-- Content Section -->
+    <div id="content">
+
+        <h2>Book Your Ticket</h2>
+
+        <p>Promotion: tickets &lt; RM10 for students &amp; staff!</p>
+
+
+        <!-- Ticket Booking Form -->
+
+        <div id="booking">
+
+            <form action="booking.php"
+            oninput="total.value = Number(adult.value) + Number(child.value);
+            price.value = (Number(adult.value) * 12) + (Number(child.value) * 8)">
+
+                <!-- Customer Name -->
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"
+                placeholder="Enter your name" required autofocus>
+
+                <br><br>
+
+
+                <!-- Email -->
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+
+                <!-- Phone Number -->
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone"
+                placeholder="Enter your phone number" required>
+
+                <br><br>
+
+
+                <!-- Show Date -->
+
+                <label for="date">Show Date:</label>
+                <input type="date" id="date" name="date">
+
+                <br><br>
+
+
+                <!-- Show Time -->
+
+                <label for="time">Show Time:</label>
+                <input type="time" id="time" name="time">
+
+                <br><br>
+
+
+                <!-- Movie Selection -->
+
+                <label for="movie">Movie:</label>
+
+                <input type="text" id="movie" name="movie" list="movies">
+
+                <datalist id="movies">
+                    <option value="Harry Potter">
+                    <option value="Ejen Ali">
+                    <option value="Papazola The Movie">
+                </datalist>
+
+                <br><br>
+
+
+                <!-- Adult Tickets -->
+
+                <label for="adult">Adult Tickets (RM12):</label>
+                <input type="number" id="adult" name="adult"
+                min="0" value="0">
+
+                <br><br>
+
+
+                <!-- Child Tickets -->
+
+                <label for="child">Child Tickets (RM8):</label>
+                <input type="number" id="child" name="child"
+                min="0" value="0">
+
+                <br><br>
+
+
+                <!-- Rating -->
+
+                <label for="rating">Rate Our Service:</label>
+                <input type="range" id="rating" name="rating"
+                min="1" max="5">
+
+                <br><br>
+
+
+                <!-- Total Tickets Output -->
+
+                <label>Total Tickets:</label>
+
+                <output name="total" for="adult child">0</output>
+
+                <br><br>
+
+
+                <!-- Total Price Output -->
+
+                <label>Total Price: RM </label>
+
+                <output name="price" for="adult child">0</output>
+
+                <br><br>
+
+
+                <!-- Submit Button -->
+
+                <input type="submit" value="Book Now">
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- Sidebar Section -->
+
+    <div id="sidebar">
+
+        <h2>Now Showing</h2>
+
+        <ul>
+
+            <li>
+                <strong>Harry Potter</strong>
+                <span>PG</span>
+                <a href="https://www.youtube.com/watch?v=LLAaW1EgyY8">Trailer</a>
+            </li>
+
+            <li>
+                <strong>Ejen Ali</strong>
+                <span>PG</span>
+                <a href="https://www.youtube.com/watch?v=LLAaW1EgyY8">Trailer</a>
+            </li>
+
+            <li>
+                <strong>Papazola The Movie</strong>
+                <span>13+</span>
+                <a href="https://www.youtube.com/watch?v=vtAUtixKx4o">Trailer</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- Footer Section -->
+
+    <div id="footer">
+
+        <p>e-Ticket&reg; - Campus Cinema &lt; RM10 every Tuesday</p>
+
+        <p>Students &amp; Staff Welcome!</p>
+
+        <p>&copy; 2026 CineKampus. All rights reserved.</p>
+
+    </div>
+
+</body>
+</html>
