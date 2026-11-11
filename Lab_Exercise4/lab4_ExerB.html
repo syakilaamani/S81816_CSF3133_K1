@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- Responsive Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>e-Café Campus</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="cafe.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-decoration: overline;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: #C0392B;
+        }
+
+        .old-price {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Error Corrections from Original Code:
+         Error 1 (Line 7): Incorrect CSS comment syntax.
+         Error 2 (Line 9): list-style-type: no changed to none.
+         Error 3 (Lines 14-15): Link states placed in wrong order.
+         Error 4 (Line 17): overlined changed to overline.
+         Error 5 (Line 18): Missing colon after color.
+         Error 6 (Lines 19-21): #intro changed to .intro.
+         Error 7 (Line 22): Missing dot before highlight.
+         Error 8 (Lines 22-25): Missing closing brace for intro.
+         Error 9 (Line 34): href="menu" changed to href="#menu".
+         Error 10 (Lines 42 and 46): Duplicate ID changed to class.
+         Error 11 (Line 53): Missing video controls.
+         Error 12 (Line 54): Incorrect MIME type changed to video/mp4.
+    -->
+
+    <!-- Header Section -->
+    <header>
+        <h1>e-Café Campus</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#feedback">Feedback</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Menu Section -->
+    <section id="menu">
+
+        <h2>Today's Menu</h2>
+
+        <p class="intro">
+            Freshly brewed coffee and local delights every day.
+        </p>
+
+        <article class="item">
+            <h3>Kopi Tarik</h3>
+
+            <p>
+                Old Price:
+                <span class="old-price">RM 4.50</span>
+                New Price:
+                <span class="highlight">RM 3.50</span>
+            </p>
+        </article>
+
+        <article class="item">
+            <h3>Nasi Lemak</h3>
+
+            <p>
+                Old Price:
+                <span class="old-price">RM 6.50</span>
+                New Price:
+                <span class="highlight">RM 5.00</span>
+            </p>
+        </article>
+
+    </section>
+
+    <!-- Video Section -->
+    <section id="video">
+
+        <h2>Watch Our Story</h2>
+
+        <figure>
+            <video width="400" height="300" controls>
+                <source src="cafe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <figcaption>
+                Welcome to e-Café Campus.
+                Enjoy our delicious food and drinks.
+            </figcaption>
+        </figure>
+
+    </section>
+
+    <!-- Feedback Section -->
+    <section id="feedback">
+
+        <h2>Customer Feedback</h2>
+
+        <form class="feedback-form">
+
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>E-mail:</label>
+            <input type="email" name="email" required>
+
+            <p>Visit Type:</p>
+
+            <input type="radio" name="visit" value="Dine-in">
+            Dine-in
+
+            <input type="radio" name="visit" value="Take-away">
+            Take-away
+
+            <p>Favourite Items:</p>
+
+            <input type="checkbox" name="favourite" value="Kopi Tarik">
+            Kopi Tarik
+
+            <input type="checkbox" name="favourite" value="Nasi Lemak">
+            Nasi Lemak
+
+            <input type="checkbox" name="favourite" value="Tea">
+            Tea
+
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+
+        <p>&copy; 2026 e-Café Campus</p>
+
+        <address>
+            Contact us:
+            <a href="mailto:cafe@campus.com">
+                cafe@campus.com
+            </a>
+        </address>
+
+    </footer>
+
+</body>
+</html>

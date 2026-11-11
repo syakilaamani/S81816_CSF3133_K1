@@ -1,0 +1,128 @@
+
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FDF2E9;
+    color: #333333;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #F5DEB3;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #6D4E37;
+}
+
+/* Link States */
+a:link {
+    color: #4D4D4D;
+}
+
+a:visited {
+    color: #7D3C98;
+}
+
+a:hover {
+    color: #CDBA9A;
+}
+
+a:active {
+    color: #3E2C1F;
+}
+
+/* Header Styling */
+header {
+    background-color: #784212;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Menu Section */
+#menu {
+    padding: 30px;
+    text-align: center;
+}
+
+.intro {
+    font-size: 18px;
+    background-color: #FDEBD0;
+    padding: 15px;
+}
+
+.item {
+    background-color: white;
+    border: 1px solid #cccccc;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+}
+
+/* Video Section */
+#video {
+    padding: 30px;
+    text-align: center;
+    background-color: #FAD7A0;
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Feedback Section */
+#feedback {
+    padding: 30px;
+    text-align: center;
+}
+
+.feedback-form {
+    background-color: white;
+    padding: 25px;
+    border: 2px solid #784212;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"] {
+    width: 95%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+button {
+    background-color: #784212;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Footer Section */
+footer {
+    background-color: #784212;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
