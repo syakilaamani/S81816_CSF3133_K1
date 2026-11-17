@@ -1,0 +1,142 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.7;
+}
+
+/* Header */
+header {
+    background-color: #075985;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #0c4a6e;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    margin: 30px auto;
+}
+
+/* Sections */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+section h2 {
+    color: #075985;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #38bdf8;
+    padding-bottom: 8px;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th {
+    background-color: #075985;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #e0f2fe;
+}
+
+tr:hover {
+    background-color: #bae6fd;
+}
+
+/* Links */
+a {
+    color: #0284c7;
+}
+
+/* Footer */
+footer {
+    background-color: #0c4a6e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+}
