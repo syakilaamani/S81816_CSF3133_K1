@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Bookstore</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shop.css">
+    <style>
+        h1 {
+            text-align: center;
+            font-family: 'Merriweather', serif;
+        }
+    </style>
+</head>
+<body>
+<!--
+    Error 1 (shop.html, Line 6): rel="stylesheets" should be rel="stylesheet".
+    Error 2 (shop.html, Line 10): <style> tag is placed inside <body> instead of <head>.
+    Error 3 (shop.html, Line 18): Inline CSS uses "=" instead of ":" (style="color=#1B4F72;" should be style="color: #1B4F72;").
+    Error 4 (shop.html, Line 20): Table id is "product" instead of "products" as styled in shop.css.
+    Error 5 (shop.css, Line 2): Font name is misspelled as 'Robotto' instead of 'Roboto'.
+    Error 6 (shop.css, Line 4): Missing hyphen in background-repeat: no repeat (should be no-repeat).
+    Error 7 (shop.css, Line 5): Property name is misspelled as bacground-position (should be background-position).
+    Error 8 (shop.css, Line 18): display: inline prevents padding from working properly on links (should be display: block).
+    Error 9 (shop.css, Line 23): Extra colon in pseudo-class li:a:hover (should be li a:hover).
+    Error 10 (shop.css, Line 26): Invalid value border-collapse: collapsed (should be collapse).
+    Error 11 (shop.css, Line 34): nth-child(2) only highlights the second row instead of all even rows (should be nth-child(even)).
+    Error 12 (shop.css, Line 37): Invalid pseudo-class tr:hovered (should be tr:hover).
+    Error 13 (shop.css, Line 45): Missing semicolon at the end of background-color: #f1f1f1.
+-->
+
+    <header>
+        <h1 style="color: white;">Campus Bookstore</h1>
+        <p>Textbooks, stationery and more for every student.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#books">Books</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <table id="products">
+            <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th class="price">Price (RM)</th>
+            </tr>
+            <tr>
+                <td>Web Design Basics</td>
+                <td>Textbook</td>
+                <td class="price">45.00</td>
+            </tr>
+            <tr>
+                <td>A4 Notebook</td>
+                <td>Stationery</td>
+                <td class="price">6.50</td>
+            </tr>
+            <tr>
+                <td>USB Drive 32GB</td>
+                <td>Gadget</td>
+                <td class="price">25.00</td>
+            </tr>
+            <tr>
+                <td>Highlighter Set</td>
+                <td>Stationery</td>
+                <td class="price">9.90</td>
+            </tr>
+        </table>
+    </main>
+
+    <footer id="contact">
+        &copy; 2026 Campus Bookstore &middot; Student Union Building, UMT
+    </footer>
+
+</body>
+</html>
