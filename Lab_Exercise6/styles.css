@@ -1,0 +1,109 @@
+/* Page layout and font */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+header {
+    background-color: #1B4F72;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 5px 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Section containers */
+.box {
+    width: 90%;
+    margin: 15px auto;
+    background-color: white;
+    padding: 15px 20px;
+    border: 1px solid #dddddd;
+}
+
+/* Input and button styling */
+input {
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+button:hover {
+    background-color: #1B4F72;
+}
+
+/* Arena and images */
+.arena {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.choice {
+    display: inline-block;
+    margin: 0 25px;
+}
+
+.choice img {
+    width: 120px;
+    height: 120px;
+    border: 1px solid #cccccc;
+}
+
+.vs {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    vertical-align: top;
+    margin-top: 75px;
+}
+
+/* Result text */
+#result {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* History table styling */
+#history {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+#history th, #history td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+#history th {
+    background-color: #1B4F72;
+    color: white;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    color: #666666;
+}
